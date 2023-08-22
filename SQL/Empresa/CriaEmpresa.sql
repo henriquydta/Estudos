@@ -14,7 +14,7 @@ CREATE TABLE Empregado (
 CREATE TABLE Orgao (
  id_orgao INT PRIMARY KEY,
  Sigla_orgao CHAR(5),
- Nome_orgao CHAR(5)
+ Nome_orgao CHAR(15)
 );
 
 CREATE TABLE Dependente (
