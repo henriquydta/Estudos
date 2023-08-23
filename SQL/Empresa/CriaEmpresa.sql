@@ -1,5 +1,5 @@
-CREATE DATABASE empresa;
-USE empresa;
+CREATE DATABASE Empresa;
+USE Empresa;
 
 CREATE TABLE Empregado (
  Matricula INT PRIMARY KEY,
