@@ -1,16 +1,19 @@
--- 5 cargos, 3 orgãos, 30 empregados, 17 dependentes.
+-- 5 cargos, 3 orgaos, 30 empregados, 17 dependentes.
 
+-- Cargos
 INSERT INTO Cargo (id_cargo, Nome_cargo) VALUES (1, 'CEO');
 INSERT INTO Cargo (id_cargo, Nome_cargo) VALUES (2, 'Patrão');
 INSERT INTO Cargo (id_cargo, Nome_cargo) VALUES (3, 'Gerente');
 INSERT INTO Cargo (id_cargo, Nome_cargo) VALUES (4, 'Vendedor');
 INSERT INTO Cargo (id_cargo, Nome_cargo) VALUES (5, 'Auxiliar de escritório');
 
+-- Orgaos
 INSERT INTO Orgao (id_orgao, Sigla_orgao, Nome_orgao) VALUES (1, 'AUX', 'Escritório');
 INSERT INTO Orgao (id_orgao, Sigla_orgao, Nome_orgao) VALUES (2, 'VEN', 'Vendas');
 INSERT INTO Orgao (id_orgao, Sigla_orgao, Nome_orgao) VALUES (3, 'GEX', 'Gab. Exec.');
 
--- Gabinete Executivo
+-- Empregados
+-- + Gabinete Executivo
 INSERT INTO Empregado (Matricula, Nome, CPF, Telefone, Salario, fk_Orgao_id_orgao, fk_Cargo_id_cargo)
 VALUES (1, 'Henry Zitos', '23874651983', '9876543210', 5000.00, 3, 1);
 
@@ -32,7 +35,7 @@ VALUES (6, 'Isabella Pantolfo', '45678901234', '4321098765', 4000.00, 3, 2);
 INSERT INTO Empregado (Matricula, Nome, CPF, Telefone, Salario, fk_Orgao_id_orgao, fk_Cargo_id_cargo)
 VALUES (7, 'Lucas Moura', '56789012345', '3210987654', 4000.00, 3, 2);
 
--- Gerentes 
+-- + Gerentes 
 INSERT INTO Empregado (Matricula, Nome, CPF, Telefone, Salario, fk_Orgao_id_orgao, fk_Cargo_id_cargo)
 VALUES (8, 'Sofia Rodrigues', '67890123456', '2109876543', 1499.99, 3, 3);
 
@@ -102,8 +105,10 @@ VALUES (29, 'Rafaela Neves', '53098124675', '6524789130', 1499.99, 3, 3);
 INSERT INTO Empregado (Matricula, Nome, CPF, Telefone, Salario, fk_Orgao_id_orgao, fk_Cargo_id_cargo)
 VALUES (30, 'Gustavo Fernandes', '26750381943', '2705846931', 1499.99, 3, 3);
 
--- INSERT INTO Empregado (Matricula, Nome, CPF, Telefone, Salario, fk_Orgao_id_orgao, fk_Cargo_id_cargo)
--- VALUES (31, 'Julia Marques', '49132067854', '1469032875', 1499.99, 3, 3);
+/*INSERT INTO Empregado (Matricula, Nome, CPF, Telefone, Salario, fk_Orgao_id_orgao, fk_Cargo_id_cargo)
+VALUES (31, 'Julia Marques', '49132067854', '1469032875', 1499.99, 3, 3);
 
--- INSERT INTO Empregado (Matricula, Nome, CPF, Telefone, Salario, fk_Orgao_id_orgao, fk_Cargo_id_cargo)
--- VALUES (32, 'Bruno Castro', '70258413629', '3958604217', 1499.99, 3, 3);
+INSERT INTO Empregado (Matricula, Nome, CPF, Telefone, Salario, fk_Orgao_id_orgao, fk_Cargo_id_cargo)
+VALUES (32, 'Bruno Castro', '70258413629', '3958604217', 1499.99, 3, 3);*/
+
+-- Dependentes
