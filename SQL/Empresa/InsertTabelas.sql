@@ -8,7 +8,7 @@ INSERT INTO Cargo (id_cargo, Nome_cargo) VALUES (4, 'Vendedor');
 INSERT INTO Cargo (id_cargo, Nome_cargo) VALUES (5, 'Auxiliar de escritório');
 
 -- Orgaos
-INSERT INTO Orgao (id_orgao, Sigla_orgao, Nome_orgao) VALUES (1, 'AUX', 'Escritório');
+INSERT INTO Orgao (id_orgao, Sigla_orgao, Nome_orgao) VALUES (1, 'ESC', 'Escritório');
 INSERT INTO Orgao (id_orgao, Sigla_orgao, Nome_orgao) VALUES (2, 'VEN', 'Vendas');
 INSERT INTO Orgao (id_orgao, Sigla_orgao, Nome_orgao) VALUES (3, 'GEX', 'Gab. Exec.');
 
@@ -21,94 +21,142 @@ INSERT INTO Empregado (Matricula, Nome, CPF, Telefone, Salario, fk_Orgao_id_orga
 VALUES (2, 'Arthur Augusto', '61582037496', '8765432109', 5000.00, 3, 1);
 
 INSERT INTO Empregado (Matricula, Nome, CPF, Telefone, Salario, fk_Orgao_id_orgao, fk_Cargo_id_cargo)
-VALUES (3, 'Isabela Crestane', '92104863517', '7654321098', 4000.00, 3, 2);
+VALUES (3, 'Isabela Crestane', '92104863517', '7654321098', 4500.00, 3, 2);
 
 INSERT INTO Empregado (Matricula, Nome, CPF, Telefone, Salario, fk_Orgao_id_orgao, fk_Cargo_id_cargo)
-VALUES (4, 'Felipe Witkowsky', '23456789012', '6543210987', 4000.00, 3, 2);
+VALUES (4, 'Felipe Witkowsky', '23456789012', '6543210987', 4500.00, 3, 2);
 
 INSERT INTO Empregado (Matricula, Nome, CPF, Telefone, Salario, fk_Orgao_id_orgao, fk_Cargo_id_cargo)
-VALUES (5, 'Leticia Rudeli', '34567890123', '5432109876', 4000.00, 3, 2);
+VALUES (5, 'Leticia Rudeli', '34567890123', '5432109876', 4500.00, 3, 2);
 
 INSERT INTO Empregado (Matricula, Nome, CPF, Telefone, Salario, fk_Orgao_id_orgao, fk_Cargo_id_cargo)
-VALUES (6, 'Isabella Pantolfo', '45678901234', '4321098765', 4000.00, 3, 2);
+VALUES (6, 'Isabella Pantolfo', '45678901234', '4321098765', 4500.00, 3, 2);
 
 INSERT INTO Empregado (Matricula, Nome, CPF, Telefone, Salario, fk_Orgao_id_orgao, fk_Cargo_id_cargo)
-VALUES (7, 'Lucas Moura', '56789012345', '3210987654', 4000.00, 3, 2);
+VALUES (7, 'Lucas Moura', '56789012345', '3210987654', 4500.00, 3, 2);
 
--- + Gerentes 
+-- + Gerentes
+--   Escritório
 INSERT INTO Empregado (Matricula, Nome, CPF, Telefone, Salario, fk_Orgao_id_orgao, fk_Cargo_id_cargo)
-VALUES (8, 'Sofia Rodrigues', '67890123456', '2109876543', 1499.99, 3, 3);
-
-INSERT INTO Empregado (Matricula, Nome, CPF, Telefone, Salario, fk_Orgao_id_orgao, fk_Cargo_id_cargo)
-VALUES (9, 'Lucas Martins', '78901234567', '1098765432', 1499.99, 3, 3);
+VALUES (8, 'Sofia Rodrigues', '67890123456', '2109876543', 3250.00, 1, 3);
 
 INSERT INTO Empregado (Matricula, Nome, CPF, Telefone, Salario, fk_Orgao_id_orgao, fk_Cargo_id_cargo)
-VALUES (10, 'Lucas Martins', '75319086240', '9876543210', 1499.99, 3, 3);
+VALUES (9, 'Lucas Martins', '78901234567', '1098765432', 3250.00, 1, 3);
 
 INSERT INTO Empregado (Matricula, Nome, CPF, Telefone, Salario, fk_Orgao_id_orgao, fk_Cargo_id_cargo)
-VALUES (11, 'Lucas Martins', '12857396405', '8765432109', 1499.99, 3, 3);
+VALUES (10, 'Julia Marques', '75319086240', '9876543210', 3250.00, 1, 3);
+
+--   Vendas
+INSERT INTO Empregado (Matricula, Nome, CPF, Telefone, Salario, fk_Orgao_id_orgao, fk_Cargo_id_cargo)
+VALUES (11, 'Bruno Castro', '12857396405', '8765432109', 3250.00, 2, 3);
 
 INSERT INTO Empregado (Matricula, Nome, CPF, Telefone, Salario, fk_Orgao_id_orgao, fk_Cargo_id_cargo)
-VALUES (12, 'Isabella Costa', '34967215802', '7458319026', 1499.99, 3, 3);
+VALUES (12, 'Isabella Costa', '34967215802', '7458319026', 3250.00, 2, 3);
 
 INSERT INTO Empregado (Matricula, Nome, CPF, Telefone, Salario, fk_Orgao_id_orgao, fk_Cargo_id_cargo)
-VALUES (13, 'Matheus Oliveira', '87031562498', '6204958317', 1499.99, 3, 3);
+VALUES (13, 'Matheus Oliveira', '87031562498', '6204958317', 3250.00, 2, 3);
+
+-- + Auxiliares de escritório
+INSERT INTO Empregado (Matricula, Nome, CPF, Telefone, Salario, fk_Orgao_id_orgao, fk_Cargo_id_cargo)
+VALUES (14, 'Maria Silva', '56243178920', '5837029641', 2000.00, 1, 4);
 
 INSERT INTO Empregado (Matricula, Nome, CPF, Telefone, Salario, fk_Orgao_id_orgao, fk_Cargo_id_cargo)
-VALUES (14, 'Maria Silva', '56243178920', '5837029641', 1499.99, 3, 3);
+VALUES (15, 'Gabriel Santos', '68925740132', '9162845307', 2000.00, 1, 4);
 
 INSERT INTO Empregado (Matricula, Nome, CPF, Telefone, Salario, fk_Orgao_id_orgao, fk_Cargo_id_cargo)
-VALUES (15, 'Gabriel Santos', '68925740132', '9162845307', 1499.99, 3, 3);
+VALUES (16, 'Laura Pereira', '20483691578', '4307951826', 2000.00, 1, 4);
 
 INSERT INTO Empregado (Matricula, Nome, CPF, Telefone, Salario, fk_Orgao_id_orgao, fk_Cargo_id_cargo)
-VALUES (16, 'Laura Pereira', '20483691578', '4307951826', 1499.99, 3, 3);
+VALUES (17, 'Pedro Almeida', '93145728610', '3875120496', 2000.00, 1, 4);
 
 INSERT INTO Empregado (Matricula, Nome, CPF, Telefone, Salario, fk_Orgao_id_orgao, fk_Cargo_id_cargo)
-VALUES (17, 'Pedro Almeida', '93145728610', '3875120496', 1499.99, 3, 3);
+VALUES (18, 'Valentina Ferreira', '17502948356', '2610735984', 2000.00, 1, 4);
 
 INSERT INTO Empregado (Matricula, Nome, CPF, Telefone, Salario, fk_Orgao_id_orgao, fk_Cargo_id_cargo)
-VALUES (18, 'Valentina Ferreira', '17502948356', '2610735984', 1499.99, 3, 3);
+VALUES (19, 'Enzo Carvalho', '62489371025', '5942167038', 2000.00, 1, 4);
 
 INSERT INTO Empregado (Matricula, Nome, CPF, Telefone, Salario, fk_Orgao_id_orgao, fk_Cargo_id_cargo)
-VALUES (19, 'Enzo Carvalho', '62489371025', '5942167038', 1499.99, 3, 3);
+VALUES (20, 'Clara Barbosa', '38150692744', '8723456109', 2000.00, 1, 4);
 
 INSERT INTO Empregado (Matricula, Nome, CPF, Telefone, Salario, fk_Orgao_id_orgao, fk_Cargo_id_cargo)
-VALUES (20, 'Clara Barbosa', '38150692744', '8723456109', 1499.99, 3, 3);
+VALUES (21, 'Joao Rocha', '54721860937', '1358692470', 2000.00, 1, 4);
+
+-- + Vendedores
+INSERT INTO Empregado (Matricula, Nome, CPF, Telefone, Salario, fk_Orgao_id_orgao, fk_Cargo_id_cargo)
+VALUES (22, 'Helena Sousa', '76904532812', '7098314526', 1499.99, 2, 5);
 
 INSERT INTO Empregado (Matricula, Nome, CPF, Telefone, Salario, fk_Orgao_id_orgao, fk_Cargo_id_cargo)
-VALUES (21, 'Joao Rocha', '54721860937', '1358692470', 1499.99, 3, 3);
+VALUES (23, 'Miguel Cardoso', '29568147306', '6241093857', 1499.99, 2, 5);
 
 INSERT INTO Empregado (Matricula, Nome, CPF, Telefone, Salario, fk_Orgao_id_orgao, fk_Cargo_id_cargo)
-VALUES (22, 'Helena Sousa', '76904532812', '7098314526', 1499.99, 3, 3);
+VALUES (24, 'Alice Fernandes', '10836579425', '9832156740', 1499.99, 2, 5);
 
 INSERT INTO Empregado (Matricula, Nome, CPF, Telefone, Salario, fk_Orgao_id_orgao, fk_Cargo_id_cargo)
-VALUES (23, 'Miguel Cardoso', '29568147306', '6241093857', 1499.99, 3, 3);
+VALUES (25, 'Leonardo Goncalves', '45673918208', '5276814903', 1499.99, 2, 5);
 
 INSERT INTO Empregado (Matricula, Nome, CPF, Telefone, Salario, fk_Orgao_id_orgao, fk_Cargo_id_cargo)
-VALUES (24, 'Alice Fernandes', '10836579425', '9832156740', 1499.99, 3, 3);
+VALUES (26, 'Manuela Gomes', '82417659034', '8049325617', 1499.99, 2, 5);
 
 INSERT INTO Empregado (Matricula, Nome, CPF, Telefone, Salario, fk_Orgao_id_orgao, fk_Cargo_id_cargo)
-VALUES (25, 'Leonardo Goncalves', '45673918208', '5276814903', 1499.99, 3, 3);
+VALUES (27, 'Davi Ribeiro', '31760284591', '3170465829', 1499.99, 2, 5);
 
 INSERT INTO Empregado (Matricula, Nome, CPF, Telefone, Salario, fk_Orgao_id_orgao, fk_Cargo_id_cargo)
-VALUES (26, 'Manuela Gomes', '82417659034', '8049325617', 1499.99, 3, 3);
+VALUES (28, 'Luisa Miranda', '98324501726', '4891263507', 1499.99, 2, 5);
 
 INSERT INTO Empregado (Matricula, Nome, CPF, Telefone, Salario, fk_Orgao_id_orgao, fk_Cargo_id_cargo)
-VALUES (27, 'Davi Ribeiro', '31760284591', '3170465829', 1499.99, 3, 3);
+VALUES (29, 'Rafaela Neves', '53098124675', '6524789130', 1499.99, 2, 5);
 
 INSERT INTO Empregado (Matricula, Nome, CPF, Telefone, Salario, fk_Orgao_id_orgao, fk_Cargo_id_cargo)
-VALUES (28, 'Luisa Miranda', '98324501726', '4891263507', 1499.99, 3, 3);
-
-INSERT INTO Empregado (Matricula, Nome, CPF, Telefone, Salario, fk_Orgao_id_orgao, fk_Cargo_id_cargo)
-VALUES (29, 'Rafaela Neves', '53098124675', '6524789130', 1499.99, 3, 3);
-
-INSERT INTO Empregado (Matricula, Nome, CPF, Telefone, Salario, fk_Orgao_id_orgao, fk_Cargo_id_cargo)
-VALUES (30, 'Gustavo Fernandes', '26750381943', '2705846931', 1499.99, 3, 3);
-
-/*INSERT INTO Empregado (Matricula, Nome, CPF, Telefone, Salario, fk_Orgao_id_orgao, fk_Cargo_id_cargo)
-VALUES (31, 'Julia Marques', '49132067854', '1469032875', 1499.99, 3, 3);
-
-INSERT INTO Empregado (Matricula, Nome, CPF, Telefone, Salario, fk_Orgao_id_orgao, fk_Cargo_id_cargo)
-VALUES (32, 'Bruno Castro', '70258413629', '3958604217', 1499.99, 3, 3);*/
+VALUES (30, 'Gustavo Fernandes', '26750381943', '2705846931', 1499.99, 2, 5);
 
 -- Dependentes
+INSERT INTO Dependente (idDependente, Dt_nascimento, Nome_dependente, fk_Empregado_Matricula)
+VALUES (1, 2008-02-09, 'Guilherme Melo', 1);
+
+INSERT INTO Dependente (idDependente, Dt_nascimento, Nome_dependente, fk_Empregado_Matricula)
+VALUES (2, 2006-12-07, 'Vinicius Banos', 1);
+
+INSERT INTO Dependente (idDependente, Dt_nascimento, Nome_dependente, fk_Empregado_Matricula)
+VALUES (3, 2008-01-05, 'Leonardo Koga', 1);
+
+INSERT INTO Dependente (idDependente, Dt_nascimento, Nome_dependente, fk_Empregado_Matricula)
+VALUES (4, 2007-11-19, 'Enzo Maximino', 1);
+
+INSERT INTO Dependente (idDependente, Dt_nascimento, Nome_dependente, fk_Empregado_Matricula)
+VALUES (5, 2006-10-28, 'Valentina Fernandes', 1);
+
+INSERT INTO Dependente (idDependente, Dt_nascimento, Nome_dependente, fk_Empregado_Matricula)
+VALUES (6, 2006-10-28, 'Alexandre Castro', 1);
+
+INSERT INTO Dependente (idDependente, Dt_nascimento, Nome_dependente, fk_Empregado_Matricula)
+VALUES (7, 2006-10-28, 'Bernardo Oliveira', 1);
+
+INSERT INTO Dependente (idDependente, Dt_nascimento, Nome_dependente, fk_Empregado_Matricula)
+VALUES (8, 2006-10-28, 'Beatriz Costa', 1);
+
+INSERT INTO Dependente (idDependente, Dt_nascimento, Nome_dependente, fk_Empregado_Matricula)
+VALUES (9, 2006-10-28, 'Gabriela Santos', 1);
+
+INSERT INTO Dependente (idDependente, Dt_nascimento, Nome_dependente, fk_Empregado_Matricula)
+VALUES (10, 2006-10-28, 'Marcelo Lima', 1);
+
+INSERT INTO Dependente (idDependente, Dt_nascimento, Nome_dependente, fk_Empregado_Matricula)
+VALUES (11, 2006-10-28, 'Camila Rocha', 1);
+
+INSERT INTO Dependente (idDependente, Dt_nascimento, Nome_dependente, fk_Empregado_Matricula)
+VALUES (12, 2006-10-28, 'Diogo Pereira', 1);
+
+INSERT INTO Dependente (idDependente, Dt_nascimento, Nome_dependente, fk_Empregado_Matricula)
+VALUES (13, 2006-10-28, 'Helena Carvalho', 1);
+
+INSERT INTO Dependente (idDependente, Dt_nascimento, Nome_dependente, fk_Empregado_Matricula)
+VALUES (14, 2006-10-28, 'Henriquy Dias', 1);
+
+INSERT INTO Dependente (idDependente, Dt_nascimento, Nome_dependente, fk_Empregado_Matricula)
+VALUES (15, 2006-10-28, 'Henriquy Dias', 1);
+
+INSERT INTO Dependente (idDependente, Dt_nascimento, Nome_dependente, fk_Empregado_Matricula)
+VALUES (16, 2006-10-28, 'Henriquy Dias', 1);
+
+INSERT INTO Dependente (idDependente, Dt_nascimento, Nome_dependente, fk_Empregado_Matricula)
+VALUES (17, 2006-10-28, 'Henriquy Dias', 1);
