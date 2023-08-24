@@ -110,58 +110,6 @@ INSERT INTO Empregado (Matricula, Nome, CPF, Telefone, Salario, fk_Orgao_id_orga
 VALUES (30, 'Gustavo Fernandes', '26750381943', '2705846931', 1499.99, 2, 5);
 
 -- Dependentes
-/*INSERT INTO Dependente (idDependente, Dt_nascimento, Nome_dependente, fk_Empregado_Matricula)
-VALUES (1, 2008-02-09, 'Guilherme Melo', 1);
-
-INSERT INTO Dependente (idDependente, Dt_nascimento, Nome_dependente, fk_Empregado_Matricula)
-VALUES (2, 2006-12-07, 'Vinicius Banos', 1);
-
-INSERT INTO Dependente (idDependente, Dt_nascimento, Nome_dependente, fk_Empregado_Matricula)
-VALUES (3, 2008-01-05, 'Leonardo Koga', 1);
-
-INSERT INTO Dependente (idDependente, Dt_nascimento, Nome_dependente, fk_Empregado_Matricula)
-VALUES (4, 2007-11-19, 'Enzo Maximino', 7);
-
-INSERT INTO Dependente (idDependente, Dt_nascimento, Nome_dependente, fk_Empregado_Matricula)
-VALUES (5, 2007-03-10, 'Valentina Barbosa', 20);
-
-INSERT INTO Dependente (idDependente, Dt_nascimento, Nome_dependente, fk_Empregado_Matricula)
-VALUES (6, 2006-07-28, 'Alexandre Gomes', 26);
-
-INSERT INTO Dependente (idDependente, Dt_nascimento, Nome_dependente, fk_Empregado_Matricula)
-VALUES (7, 2008-11-15, 'Bernardo Barbosa', 20);
-
-INSERT INTO Dependente (idDependente, Dt_nascimento, Nome_dependente, fk_Empregado_Matricula)
-VALUES (8, 2010-05-06, 'Beatriz Cardoso', 23);
-
-INSERT INTO Dependente (idDependente, Dt_nascimento, Nome_dependente, fk_Empregado_Matricula)
-VALUES (9, 2007-09-22, 'Gabriela Silva', 14);
-
-INSERT INTO Dependente (idDependente, Dt_nascimento, Nome_dependente, fk_Empregado_Matricula)
-VALUES (10, 2009-01-17, 'Marcelo Santos', 15);
-
-INSERT INTO Dependente (idDependente, Dt_nascimento, Nome_dependente, fk_Empregado_Matricula)
-VALUES (11, 2011-08-09, 'Camila Santos', 15);
-
-INSERT INTO Dependente (idDependente, Dt_nascimento, Nome_dependente, fk_Empregado_Matricula)
-VALUES (12, 2012-04-03, 'Diogo Goncalves', 25);
-
-INSERT INTO Dependente (idDependente, Dt_nascimento, Nome_dependente, fk_Empregado_Matricula)
-VALUES (13, 2010-06-20, 'Helena Costa', 12);
-
-INSERT INTO Dependente (idDependente, Dt_nascimento, Nome_dependente, fk_Empregado_Matricula)
-VALUES (14, 2008-12-12, 'Gustavo Rocha', 21);
-
-INSERT INTO Dependente (idDependente, Dt_nascimento, Nome_dependente, fk_Empregado_Matricula)
-VALUES (15, 2009-10-25, 'Laura Carvalho', 19);
-
-INSERT INTO Dependente (idDependente, Dt_nascimento, Nome_dependente, fk_Empregado_Matricula)
-VALUES (16, 2011-02-08, 'Joaquim Fernandes', 30);
-
-INSERT INTO Dependente (idDependente, Dt_nascimento, Nome_dependente, fk_Empregado_Matricula)
-VALUES (17, 2006-09-30, 'Isadora Marques', 10);*/
-
--- Dependentes
 INSERT INTO Dependente (idDependente, Dt_nascimento, Nome_dependente, fk_Empregado_Matricula)
 VALUES (1, '2008-02-09', 'Guilherme Melo', 1);
 
