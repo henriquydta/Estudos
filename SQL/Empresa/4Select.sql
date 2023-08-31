@@ -52,12 +52,9 @@ GROUP BY Orgao.Nome_orgao, Cargo.Nome_cargo;
 -- SOMA DOS SALÁRIOS
 SELECT sum(Salario) FROM Empregado;
 -- SOMA DOS SALÁRIOS POR CARGO
-SELECT c.Nome_cargo, (
-  SELECT SUM(Salario)
-  FROM Empregado e
-  WHERE e.fk_Cargo_id_cargo = c.id_cargo
-);
-FROM Cargo c;
+SELECT c.Nome_cargo, SUM(e.Salario) FROM Cargo c
+JOIN Empregado e ON c.id_cargo = e.fk_Cargo_id_cargo
+GROUP BY c.Nome_cargo;
 -- SOMA DOS SALÁRIOS POR CARGO E ÓRGÃO
 SELECT o.Nome_orgao, c.Nome_cargo, SUM(e.Salario)
 FROM Orgao o
