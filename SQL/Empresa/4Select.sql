@@ -27,4 +27,12 @@ SELECT YEAR(dataNascimento), AVG(Salario) FROM Empregado GROUP BY YEAR(dataNasci
 SELECT e.Matricula, COUNT(d.idDependente) FROM Empregado e
 LEFT JOIN Dependente d ON e.Matricula = d.fk_Empregado_Matricula
 GROUP BY e.Matricula;
--- 
+-- TODOS OS EMPREGADOS COM DEPENDENTES MENOR QUE UMA IDADE x
+SELECT e.Matricula, e.Nome, d.Nome_dependente, e.dataNascimento FROM Empregado e
+JOIN Dependente d ON e.Matricula = d.fk_Empregado_Matricula
+WHERE TIMESTAMPDIFF(YEAR, e.dataNascimento, CURDATE()) < 18;
+
+-- TODOS OS NOMES DOS EMPREGADOS COM SALÁRIO E NOME DOS DEVIDOS DEPENDENTES SE HOUVER (OU SEJA, SE TIVER MAIS DE UM DEPENDENTE APARECE n VEZES, SE NÃO TIVER DEPENDENTE APARECE 1 VEZ)
+SELECT e.Nome, e.Salario, IFNULL(d.Nome_dependente, 'Sem Dependente') FROM Empregado e
+LEFT JOIN Dependente d ON e.Matricula = d.fk_Empregado_Matricula
+ORDER BY e.Nome, d.Nome_dependente;
