@@ -1,4 +1,4 @@
-ALTER TABLE Empregado ADD sexo VARCHAR(10), ADD dataNascimento DATE;
+ALTER TABLE Empregado ADD sexo VARCHAR(10), ADD dataNascimento DATE; 
 
 UPDATE Empregado
 SET sexo = 'Masculino', dataNascimento = '2006-10-28'
