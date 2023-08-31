@@ -11,7 +11,7 @@ INNER JOIN Empregado e ON o.id_orgao = e.fk_Orgao_id_orgao
 INNER JOIN Cargo c ON e.fk_Cargo_id_cargo = c.id_cargo 
 GROUP BY o.Nome_orgao, c.Nome_cargo;
 -- TODOS OS EMPREGADOS E SEUS DEPENDENTES
-SELECT DISTINCT e.Nome FROM Empregado e INNER JOIN Dependente d ON e.Matricula = d.fk_Empregado_Matricula;
+SELECT DISTINCT e.Nome, d.Nome_dependente FROM Empregado e INNER JOIN Dependente d ON e.Matricula = d.fk_Empregado_Matricula;
 -- TODOS OS EMPREGADOS SEM DEPENDENTES
 SELECT e.Nome
 FROM Empregado e
@@ -35,7 +35,6 @@ WHERE O.id_orgao NOT IN (
     FROM Empregado E
 );
 
-MÉDIA DOS SALÁRIOS POR CARGO E ÓRGÃO
 -- MÉDIA DOS SALÁRIOS
 SELECT AVG(Salario) FROM Empregado;
 -- MÉDIA DOS SALÁRIOS POR CARGO
