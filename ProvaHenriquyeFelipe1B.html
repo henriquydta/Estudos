@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <h1 align="center">Cadastro IFSP</h1>
+    </head>
+    <body> 
+        <p align="center">Login: <input type="text" name="nome"> Senha: <input type="password" name="nome"> </p>
+        <p align="center">Nome: <input type="text" name="nome" maxlength="50"></p> 
+
+        <div align="center">
+            <p> 
+                Tipo: 
+                <input type="radio" id="tipo" name="Tipo" value="administrativo">
+                <label for="administrativo"> Administrativo </label>
+                <input type="radio" id="tipo" name="Tipo" value="professor">
+                <label for="professor"> Professor </label>
+                <input type="radio" id="tipo" name="Tipo" value="aluno">
+                <label for="aluno"> Aluno </label>
+            </p>
+            <p> 
+                <label for="idade"> Idade </label> 
+                <input type="range" id="idade" name="Idade" min="0" max="100" step="1"> 
+            </p>
+        </div>
+
+        <div align="center">
+            Escolha a(s) disciplina(s):
+            <div>
+                <input type=checkbox name="materias" value="AW1" checked> AW1 <br>
+                <input type=checkbox name="materias" value="LP3"> LP3 <br>
+                <input type=checkbox name="materias" value="TPO"> TPO <br>
+            </div>
+        </div>
+
+        <br>
+        <div align="center">
+            Escolha seu professor:
+            <select name="profs">
+                <option value="Clau"> Clau </option>
+                <option value="Latore"> Latore </option>
+                <option value="Luk"> Luk </option>
+                <option value="Miyuki"> Miyuki </option>
+            </select>
+        </div>
+
+        <div align="center">
+            <p>Faça um comentário sobre o curso:</p>
+            <textarea rows="5" cols="100"> O Luk só me enche o ............ </textarea> <br>
+            <input type="submit" name="limpar" value="Limpar">
+            <input type="submit" name="enviar" value="Enviar">
+        </div>
+    </body> 
+</html>
