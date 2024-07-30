@@ -1,4 +1,4 @@
-Espero que ache algo de interessante com meus estudos. :)
+Meus estudos com diversas linguagens.
 
 ## Linguagens
  
